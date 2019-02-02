@@ -5,9 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="NewFolder\**" />
     <Compile Remove="pages\**" />
+    <Content Remove="NewFolder\**" />
     <Content Remove="pages\**" />
+    <EmbeddedResource Remove="NewFolder\**" />
     <EmbeddedResource Remove="pages\**" />
+    <None Remove="NewFolder\**" />
     <None Remove="pages\**" />
   </ItemGroup>
 
@@ -15,10 +19,6 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="NewFolder\NewFolder\" />
   </ItemGroup>
 
 </Project>
